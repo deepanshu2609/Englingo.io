@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+	   <meta charset="UTF-8">
+	   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	   <title>EngLingo</title>  
+       <!-- <CSS -->
+       	<link rel='stylesheet' href="./style.css">
+
+      <script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/1xKB3cFFzE1kN4ai/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+
+</head>
+<body>
+
+	<!-- Navabar -->
+	<nav class ="navbar">
+		<h1 id='section1' class="logo">ENGLINGO</h1>
+		<ul class='nav-links'>
+			<li class="active"><a href="#section1"><h3>Home</h3></a></li>
+			<li><a href="#section2"><h3>Product</h3></a></li>
+			<li><a href="#section3"><h3>Our Technology</h3></a></li>
+			<li><a href="#section4"><h3>About</h3></a></li>
+			<li><a href="#section5"><h3>Contact</h3></a></li>
+			<!-- <li class="ctn"><a href="#section5">Register Now</a></li> -->
+
+	</ul>
+
+	<ul class='nav-links'>
+		<li class="ctn3"><a href="#section6"><h3>Register Now</h3></a></li>
+	</ul>
+	<img src="./img/menu.png" alt="" class="menu-btn">
+</nav>
+
+<!-- <video autoplay muted loop id="myVideo">
+  <source src="img/hello3.mp4" type="video/mp4">
+</video>
+ -->
+	<header>
+		<video autoplay muted loop id="Video">
+	  		<source src="img/hello14.mp4" type="video/mp4">
+	  		<img src="img/glow.png"/> 
+		</video>
+		<div class='header-content'>
+			<!-- <video autoplay muted loop id="myVideo">
+  <source src="img/hello3.mp4" type="video/mp4">
+</video> -->
+			<!-- <h2> Learn</h2> -->
+			<div class='line'></div>
+			<h1>Welcome to Englingo</h1>
+			<h2>Your one-stop destination for conquering any English language test with confidence.</h2>
+			<!-- <h2>Welcome to Englingo! Your one-stop destination for conquering any English language test with confidence. Whether you're aiming for IELTS, TOEFL, PTE, or simply want to brush up on your skills, we offer a comprehensive and engaging platform to supercharge your English journey. We will provide you with a customise plan, you just need to practice daily</h2> -->
+ 			<a href="#section6" class='ctn'>Get Started</a>
+
+		</div>
+	</header>
+<!-- <video autoplay muted loop id="myVideo">
+  <source src="img/hello3.mp4" type="video/mp4">
+</video> -->
+	<!-- Events -->
+	<section class="events">
+		<div class="title">
+			<h1 id='section2'>Discover Our Products</h1>
+			<div class='line'></div>
+		</div>
+		<!-- <video autoplay muted loop id="Video">
+	  		<source src="img/hello2.mp4" type="video/mp4">
+		</video>
+ -->		<div class="row">
+			<div class="col">
+				<img src="./img/reading2.png">
+				</div>
+				<div class="col">
+				<!-- <h4> Reading with AI scoring</h4> -->
+				<!-- <p>A smart AI based solution for your salon and beauty parlor</p> -->
+				<a href="https://iiitaphyd-my.sharepoint.com/:v:/g/personal/bishwajeet_pal_students_iiit_ac_in/Eec2ZwWcc4pDgfdMQuidzTEBDYN37c30pbN02A8k7kE8xA?e=Dsur7m"><h4> Reading with AI scoring</h4></a>
+				<p>Experience the future of English proficiency learning with AI-powered Reading scoring. Our innovative platform utilizes cutting-edge artificial intelligence to assess and enhance your reading skills. Instant feedback, personalized recommendations, and comprehensive analysis empower learners to track their progress and tailor their study plans.</p> 
+			</div>
+			<div class="col">
+				<img src="./img/listening.png">
+				</div>
+				<div class="col">
+				<a href="#"><h4>Listening with with AI scoring</h4></a>
+				<p>Immerse yourself in an array of audio content, spanning diverse topics and accents. AI scoring provides real-time assessment, pinpointing areas for improvement in comprehension, pronunciation, and vocabulary. Personalized feedback and tailored recommendations optimize your learning journey.</p>
+				<!-- <a href="#" class="ctn">Coming Soon</a> -->
+			</div>
+		</div>
+			<div class="row">
+			<div class="col">
+				<img src="./img/speaking.png">
+				</div>
+				<div class="col">
+				<a href="#"><h4> Speaking with AI scoring</h4></a>
+				<p>Experience unparalleled advancement in spoken English with our AI-driven speaking scoring feature on the proficiency learning platform. Engage in interactive speaking exercises or upload your own english speaking conversation, receiving real-time feedback on pronunciation, fluency, and grammar. AI scoring offers personalized insights and tailored recommendations, empowering learners to refine their speaking skills confidently. </p>
+				<!-- <a href="https://iiitaphyd-my.sharepoint.com/:v:/g/personal/bishwajeet_pal_students_iiit_ac_in/Eec2ZwWcc4pDgfdMQuidzTEBDYN37c30pbN02A8k7kE8xA?e=Dsur7m" class="ctn">View Demo</a> -->
+			</div>
+			<div class="col">
+				<img src="./img/writing.png">
+				</div>
+				<div class="col">
+				<a href="#"><h4>Writing with AI scoring</h4></a>
+				<p>Refine your English writing skills with our AI-powered scoring feature on the proficiency learning platform. Compose confidently as AI evaluates grammar, vocabulary, and coherence in real-time. Receive instant feedback, personalized tips, and targeted suggestions to enhance your writing proficiency. Also get a taliored report on the context of your content with improvement scope.</p>
+				<!-- <a href="#" class="ctn">Coming Soon</a> -->
+			</div>
+		</div>
+		<div class='header-content'>
+		<a href="https://iiitaphyd-my.sharepoint.com/:v:/g/personal/bishwajeet_pal_students_iiit_ac_in/Eec2ZwWcc4pDgfdMQuidzTEBDYN37c30pbN02A8k7kE8xA?e=Dsur7m" class='ctn3'>Explore Courses</a>
+	</div>
+	</section>
+
+	<!-- <section class="Technology">
+		<div class="Technology-content">
+			<div class="row">
+			<div class="col">
+				<img src="./img/scoring.png">
+			</div>	
+			<div class="col">
+			<div class="title">
+			<h1 id='section3'>New AI Scoring Analysis</h1>
+			<div class='line'></div>
+			</div>
+			<p>Our Smart Mirror incorporates AI-powered technology to provide your clients with a realistic virtual image of their desired hairstyle, allowing them to see exactly how they will look before any scissors are even lifted. This technology uses advanced algorithms to analyze facial features and hair characteristics to create a personalized and accurate virtual image that clients can view from all angles. Not only does this technology allow your clients to feel confident and excited about their new hairstyle, but it also helps you as a salon owner to increase customer satisfaction and retention rates. With our Smart Mirror technology, you can provide an unparalleled level of customer service that sets your salon apart from the competition.</p>
+			<a href='#' class="ctn">Read More</a>
+		</div>
+	</div>
+		</div>
+
+	</section> -->
+
+	<section class="partner">
+		<!-- <div class='line'></div> -->
+		<div class='line3'></div>
+		<div class="title">
+			<h1 id='section4'>Trusted by Our Partners</h1>
+			<div class='line1'></div>
+		</div>
+		<div class="row">
+			<!-- <div class="col">
+				<img src="./img/pte.png">
+			</div> -->
+			<div class="col">
+				<img src="./img/tofel.png">
+				<!-- <h4>Poduct Lab, IIITH</h4> -->
+				<!-- <a href="https://www.iiit.ac.in/news/productslab/" class="ctn">Learn More</a> -->
+			</div>
+			<div class="col">
+				<img src="./img/bc.png">
+				<!-- <h4>PDM, IIITH</h4> -->
+				<!-- <a href="https://pdm.iiit.ac.in/" class="ctn">Learn More</a> -->
+			</div>
+			<div class="col">
+				<img src="./img/iels.png">
+				<!-- <h4>Elegant Salon, Hyderabad</h4> -->
+				<!-- <a href="https://www.facebook.com/elegantspalon/" class="ctn">Learn More</a> -->
+			</div>
+			<div class="col">
+				<img src="./img/cet.png">
+				</div>
+		</div>
+	</section>
+
+	<section class="contact">
+		<!-- <div class='line1'></div> -->
+		<div class="title">
+			<p1><br></p1>
+			<h1 id='section5'>Meet The Team</h1>
+
+			<div class='line'></div>
+		</div>
+
+			<!-- <div class="row">
+				<div class="col"><p1>Terms of Use |</p1></div>
+				<div class="col"><p1> Privacy Policy</p1></div>
+			</div> -->
+
+		<div class="row">
+			<div class="col">
+				<img src="./img/abhineet3.png">
+				<!-- <h4> Abhineet Saxena</h4>
+				<p>Product Manager</p> -->
+				<!-- <p1><br></p1> -->
+				<a href="https://www.linkedin.com/in/abhineet-saxena/" class="ctn2">LinkedIn</a>
+			</div>
+			<div class="col">
+				<img src="./img/deepanshu2.png">
+				<!-- <h4>Deepanshu Garg</h4>
+				<p>CTO</p> -->
+				<!-- <p1><br></p1> -->
+				<a href="https://www.linkedin.com/in/deepanshu-garg-a08468178/" class="ctn2">LinkedIn</a>
+			</div>
+		</div>
+		<p1><br></p1> 
+
+		<!-- <div class="title2">
+			<p1><br></p1>
+			<p1><br></p1>
+		<p2>IIIT Hyderabad, Professor CR Rao Rd, Gachibowli, Hyderabad, Telangana 500032</p2>
+		<p1><br></p1>
+		<p2> Terms of Use | Privacy Policy </p2>
+	</div>
+	</section> -->
+</section>
+
+	<section class="register">
+
+		<div class="title">
+			<h1 id='section6'>Register Now</h1>
+
+			<div class='line'></div>
+		</div>
+
+		<div class="container">
+  <form form id="myForm" action="#">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="First Name" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="Last Name" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" name="email" placeholder="Your Email Id.">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label>Any suggestion</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="Any suggestion" placeholder="Write something.." style="height:100px" >
+      </div>
+    </div>
+ <!--    <div class="row">
+      <input type="submit" value="Submit" >
+    </div> -->
+  </form>
+  <button  onclick='SubForm()'>Submit</button>
+</div>
+	</section>
+
+
+	<section class="company">
+		<!-- <div class='line1'></div> -->
+		<div class="title1">
+			<p1><br></p1>
+			<h1>Englingo</h1>
+
+			<div class='line'></div>
+		</div>
+		
+		<div class="title2">
+			<!-- <p1><br></p1> -->
+			<!-- <p1><br></p1> -->
+		<p2>IIIT Hyderabad, Professor CR Rao Rd, Gachibowli, Hyderabad, Telangana 500032</p2>
+		<p1><br></p1>
+		<p2> Terms of Use | Privacy Policy | 2023 All rights reserved</p2>
+		<!-- <p2><br></p2> -->
+		<!-- <p2> @Englingo 2023 All rights reserved </p2> -->
+	</div>
+	</section>
+
+	<footer>
+		<nav class ="navbar">
+		<!-- <h1 id='section1' class="logo">FACE.AI</h1> -->
+	<!-- 	<ul class='nav-links'>
+			<li class="active"><a href="#section1">Home</a></li>
+			<li><a href="#section2">Products</a></li>
+			<li><a href="#section3">Our Technology</a></li>
+			<li><a href="#section4">About</a></li>
+			<li class="ctn"><a href="#section5">Contact</a></li>
+	</ul>
+	<img src="./img/menu.png" alt="" class="menu-btn">
+</nav> -->
+	</footer>
+
+	<script>
+		const menuBtn = document.querySelector('.menu-btn')
+		const navlinks= document.querySelector('.nav-links')
+		menuBtn.addEventListener('click',()=>{
+			navlinks.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
+
+
+
+	<!-- <section class="Technology">
+		<div class="row">
+			<div class="col">
+		<div class="Technology-image">
+			<img src="./img/12.JPG">
+		</div>
+		</div>
+		<div class="col">
+		<div class="Technology-content">
+			<h1 id='section3'>OUR TECHNOLOGY</h1>
+			<p>Our hair tracking technology is designed fully in-house. Before we begin, we have experts label thousands of images. Our artificial intelligence can learn from these images so that when it sees a photo it has never seen before, it can identify characteristics such as a skin concern or your face shape.<br>We then conduct validation studies on thousands of individuals around the world. The results are dozens of published papers ensuring we can understand your face, hair, and skin as only an expert could, but all from the comfort of your phone.</p>
+			<a href='#' class="ctn">Read More</a>
+			<div>
+		</div>
+		</div>
+	</section> -->
+
+	<!-- <section class="team">
+		<div class="title">
+			<h1 id='section4'>Our Team</h1>
+			<div class='line'></div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<img src="./img/biswajeet.jpg">
+				<h4> Bishwajeet</h4>
+				<p>Product Manager, UX Researcher</p>
+				<a href="https://www.linkedin.com/in/bishwajeet-pal/" class="ctn2">in</a>
+			</div>
+			<div class="col">
+				<img src="./img/deepanshu.jpg">
+				<h4>Deepanshu Garg</h4>
+				<p>Product Manager, CV Research Engineer</p>
+				<a href="https://www.linkedin.com/in/deepanshu-garg-a08468178/" class="ctn2">in</a>
+			</div>
+		</div>
+	</section> -->
